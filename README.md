@@ -10,7 +10,7 @@
 
 ## Studi Kasus
 
-Program ini merupakan implementasi **CRUD (Create, Read, Update, Delete)** dengan konsep **Object-Oriented Programming (OOP)** dalam bahasa Java, dengan studi kasus **Sistem Manajemen Gym**.
+Program ini merupakan implementasi CRUD (Create, Read, Update, Delete) dengan konsep Object-Oriented Programming (OOP) dalam bahasa Java, dengan studi kasus **Sistem Manajemen Gym**.
 
 Latar belakang studi kasus: sebuah gym membutuhkan sistem sederhana untuk mengelola dua jenis data utama, yaitu:
 
@@ -19,7 +19,7 @@ Latar belakang studi kasus: sebuah gym membutuhkan sistem sederhana untuk mengel
    - **Alat Cardio** (contoh: treadmill, sepeda statis) — punya atribut khusus seperti kecepatan maksimal dan durasi maksimal pemakaian.
    - **Alat Beban** (contoh: dumbbell, barbel, mesin beban) — punya atribut khusus seperti beban maksimal dan tipe beban.
 
-Karena alat cardio dan alat beban sama-sama merupakan "alat gym" namun memiliki karakteristik yang berbeda, studi kasus ini cocok diimplementasikan menggunakan konsep **inheritance (pewarisan)**, di mana keduanya mewarisi atribut umum dari satu induk class yang sama.
+Karena alat cardio dan alat beban sama-sama merupakan "alat gym" namun memiliki karakteristik yang berbeda, studi kasus ini cocok diimplementasikan menggunakan konsep inheritance, di mana keduanya mewarisi atribut umum dari satu induk class yang sama.
 
 ---
 
@@ -93,7 +93,7 @@ Konsep inheritance diterapkan pada relasi antara `GymEquipment` (Super Class) de
 
 ### 1. Super Class — `GymEquipment`
 
-Menyimpan atribut yang dibutuhkan oleh **semua** jenis alat gym, agar tidak perlu ditulis ulang di tiap subclass:
+Menyimpan atribut yang dibutuhkan oleh semua jenis alat gym, agar tidak perlu ditulis ulang di tiap subclass:
 
 ```java
 public class GymEquipment {
@@ -117,7 +117,7 @@ public class GymEquipment {
 
 ### 2. Sub Class — `CardioEquipment extends GymEquipment`
 
-Kata kunci **`extends`** menandakan bahwa `CardioEquipment` mewarisi seluruh atribut dan method dari `GymEquipment`, lalu menambahkan atribut khusus (`kecepatanMaks`, `durasiMaks`):
+Kata kunci `extends` menandakan bahwa `CardioEquipment` mewarisi seluruh atribut dan method dari `GymEquipment`, lalu menambahkan atribut khusus (`kecepatanMaks`, `durasiMaks`):
 
 ```java
 public class CardioEquipment extends GymEquipment {
@@ -126,7 +126,7 @@ public class CardioEquipment extends GymEquipment {
 
     public CardioEquipment(String idAlat, String namaAlat, String merek, String kondisi,
                             double kecepatanMaks, int durasiMaks) {
-        super(idAlat, namaAlat, merek, kondisi); // memanggil constructor parent
+        super(idAlat, namaAlat, merek, kondisi); 
         this.kecepatanMaks = kecepatanMaks;
         this.durasiMaks = durasiMaks;
     }
