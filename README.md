@@ -155,12 +155,12 @@ Atau jika menggunakan IDE (NetBeans/Eclipse/IntelliJ), cukup jalankan (Run) file
 
 **Tampilan Menu Utama:**
 
-![Menu Utama](screenshots/menu-utama.png)
+![Menu Utama](Screenshots/menu-utama.png)
 
 **Tampilan Menu Kelola Member:**
 
-![Menu Member](screenshots/menu-member.png)
+![Menu Member](Screenshots/menu-member.png)
 
 **Tampilan Menu Kelola Alat Gym:**
 
-![Menu Alat](screenshots/menu-alat.png)
+![Menu Alat](Screenshots/menu-alat.png)
