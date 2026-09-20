@@ -85,20 +85,6 @@ classDiagram
 | `WeightEquipment` | **Subclass** dari `GymEquipment`, khusus alat beban |
 | `ManajemenGym` | Class manager, menyimpan `ArrayList` dari `Member` dan `GymEquipment`, berisi seluruh logic CRUD |
 
-### Struktur Package
-
-```
-src/
-├── Main.java                    (default package)
-├── data_gym/
-│   ├── Member.java
-│   ├── GymEquipment.java
-│   ├── CardioEquipment.java
-│   └── WeightEquipment.java
-└── operasional/
-    └── ManajemenGym.java
-```
-
 ---
 
 ## Penerapan Inheritance dalam Kode
